@@ -78,3 +78,9 @@ export function cookingStatus(cookTimeLeft){
    * The first parameter is the list your friend sent you and the second is the ingredient list for your own recipe. The function should add the last item from your friend's list to the end of your list. The array that represents your recipe should be modified directly and the function should not return anything. 
    * However, the first argument should not be modified.
    */
+
+  export function addSecretIngredient(friendList, myList){
+    let lastIngredient = friendList[friendList.length -1];
+    myList.push(lastIngredient);
+    console.log(myList);
+  }
