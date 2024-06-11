@@ -44,3 +44,11 @@ export function cookingStatus(cookTimeLeft){
     let prepTimeEstimate = layers.length * avgPrepTime;
     return prepTimeEstimate;
   }
+
+  /**
+   * Define the function quantities that takes an array of layers as a parameter. 
+   * The function will then determine the quantity of noodles and sauce needed to make your meal. 
+   * The result should be returned as an object with keys noodles and sauce.
+   */
+
+  export function quantities(layers){}
