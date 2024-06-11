@@ -36,6 +36,7 @@ export function cookingStatus(cookTimeLeft){
  * The function should return the estimate for the total preparation time based on the number of layers. 
  * If the function is called without providing the average preparation time, 2 minutes should be assumed instead.
  */
+
   
   export function preparationTime(layers, avgPrepTime){
     if (avgPrepTime === undefined){
@@ -51,4 +52,23 @@ export function cookingStatus(cookTimeLeft){
    * The result should be returned as an object with keys noodles and sauce.
    */
 
-  export function quantities(layers){}
+  export function quantities(layers){
+    let noodles = 0;
+    let sauce = 0.0;
+    
+    for (let i = 0; i < layers.length; i++) {
+      if (layers[i] == 'noodles'){
+        noodles += 50;
+      }
+      if (layers[i] == 'sauce'){
+        sauce += .2;
+      }
+    }
+  
+    let quantity = { 
+      noodles: noodles, 
+      sauce: sauce
+    }
+    
+    return quantity
+  }
