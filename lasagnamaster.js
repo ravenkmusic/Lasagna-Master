@@ -84,3 +84,11 @@ export function cookingStatus(cookTimeLeft){
     myList.push(lastIngredient);
     console.log(myList);
   }
+
+  /**
+   * Implement a function scaleRecipe that takes two parameters.
+   *    A recipe object that holds the amounts needed for 2 portions. The format of the object can be seen in the example below.
+   *    The number of portions you want to cook.
+   * The function should return a recipe object with the amounts needed for the desired number of portions. You want to keep the original recipe though. 
+   * This means, in this task the recipe argument should not be modified.
+   */
