@@ -92,3 +92,12 @@ export function cookingStatus(cookTimeLeft){
    * The function should return a recipe object with the amounts needed for the desired number of portions. You want to keep the original recipe though. 
    * This means, in this task the recipe argument should not be modified.
    */
+
+  export function scaleRecipe(recipe, numberOfPortions){
+  
+    let scaledRecipe = {...recipe};
+    for (let ingredient in scaledRecipe){
+      scaledRecipe[ingredient] = scaledRecipe[ingredient] * (numberOfPortions / 2);
+    }
+    return scaledRecipe;
+  }
